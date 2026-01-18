@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions in css</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin-left: 100px;
+            margin-top: 100px;
+            /* background-color: black; */
+            height: 200vh;
+        }
+
+
+
+        .container {
+            background-color: beige;
+            height: 1000px;
+            width: 300px;
+            /* position: relative; */
+
+        }
+
+
+        .box {
+            height: 100px;
+            width: 100px;
+        }
+
+        .red {
+            background-color: red;
+            /* position: relative;
+
+            bottom: 10px;
+
+            right: 100px */
+            /* position: relative;
+            top: 0 */
+        }
+
+        .green {
+            background-color: green;
+            position: fixed;
+            top: 0;
+            right: 0;
+            z-index: -1;
+        }
+
+        .yellow {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: yellow;
+            z-index: 2;
+
+        }
+
+        .purple {
+            position: sticky;
+            top: 20px;
+            background-color: purple;
+
+        }
+
+        .abc {
+            height: 2000px;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class=" container ">
+        <!-- <div class="box red"></div> -->
+        <div class="box yellow"></div>
+        <div class="box green"></div>
+        <div class="box purple"></div>
+    </div>
+    <div class="abc">
+
+    </div>
+
+</body>
+
+</html>

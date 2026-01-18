@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div concept</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Montserrat", sans-serif;
+
+
+
+
+        }
+
+        body {
+            background-color: #E5DEFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .contents {
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px
+        }
+
+        .card {
+            width: 400px;
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            border-radius: 16px;
+        }
+
+        .card img {
+            width: 100%;
+        }
+
+        .description {
+            font-size: 14px;
+            font-weight: 400;
+            color: #6E6B7B;
+
+        }
+
+        h4 {
+            color: #6E44FF;
+            font-size: 18px;
+            font-weight: 500;
+
+
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            color: #6E44FF;
+
+        }
+
+        .cards {
+            display: flex;
+            gap: 48px;
+            padding: 64px;
+        }
+
+        .line {
+            border: 1px solid #B6A1FF;
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+    <div class="main">
+        <h1 style="text-align: center;">Which is <i style="color: #6E44FF;">better?</i></h1>
+
+        <div class="cards">
+            <div class="card">
+                <img src="./cardimg.png" alt="">
+
+                <div class="contents">
+                    <p style="font-size: 12px; font-weight: 400; color: #6E6B7B; ">2 hours ago</p>
+                    <h4>Blog Card Title</h4>
+                    <p class="description">Jujubes apple pie lemon drops candy canes fruitcake ice cream jelly. Toffee
+                        fruitcake dragée
+                        lollipop
+                        bonbon chocolate bar. Caramels icing carrot cake. Icing dessert jujubes.</p>
+                    <div class="line"></div>
+                    <div class="footer">
+                        <h4 style="font-size: 14px;">Card Link</h4>
+                        <div style="display: flex; gap: 4px; align-items: center;">
+                            <span class="material-symbols-outlined red">
+                                favorite
+                            </span>
+                            <span class="material-symbols-outlined">
+                                home
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card">
+                <img src="./cardimg.png" alt="">
+
+                <div class="contents">
+                    <p style="font-size: 12px; font-weight: 400; color: #6E6B7B; ">2 hours ago</p>
+                    <h4>Blog Card Title</h4>
+                    <p class="description">Jujubes apple pie lemon drops candy canes fruitcake ice cream jelly. Toffee
+                        fruitcake dragée
+                        lollipop
+                        bonbon chocolate bar. Caramels icing carrot cake. Icing dessert jujubes.</p>
+                    <div class="line"></div>
+                    <div class="footer">
+                        <h4 style="font-size: 14px;">Card Link</h4>
+                        <div style="display: flex; gap: 4px; align-items: center;">
+                            <p>icon</p>
+                            <p>icon</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card">
+                <img src="./cardimg.png" alt="">
+
+                <div class="contents">
+                    <p style="font-size: 12px; font-weight: 400; color: #6E6B7B; ">2 hours ago</p>
+                    <h4>Blog Card Title</h4>
+                    <p class="description">Jujubes apple pie lemon drops candy canes fruitcake ice cream jelly. Toffee
+                        fruitcake dragée
+                        lollipop
+                        bonbon chocolate bar. Caramels icing carrot cake. Icing dessert jujubes.</p>
+                    <div class="line"></div>
+                    <div class="footer">
+                        <h4 style="font-size: 14px;">Card Link</h4>
+                        <div style="display: flex; gap: 4px; align-items: center;">
+                            <p>icon</p>
+                            <p>icon</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

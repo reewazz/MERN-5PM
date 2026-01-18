@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: "Poppins", sans-serif;
+
+            background-color: rgb(243, 245, 247);
+        }
+
+        .subheading {
+            font-size: 28px;
+        }
+
+        .main {
+            display: flex;
+            gap: 64px;
+            align-items: center;
+        }
+
+        .right .form {
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            width: 400px;
+            border-radius: 8px;
+            padding: 16px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+
+        }
+
+        .right .form input {
+            padding: 15px 20px;
+            /* border-color: #DDDFE2; */
+            /* outline: #DDDFE2; */
+            border-radius: 8px;
+            border: 1px solid #DDDFE2
+        }
+
+        .right .form .login {
+            padding: 16px 24px;
+            background-color: #0866FF;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 8px;
+            border: none
+        }
+
+        .right .form input:focus {
+            border: 1px solid #0866FF;
+            outline: #0866FF;
+        }
+
+
+        .form a {
+            text-align: center;
+            text-decoration: none;
+            font-size: 12px;
+        }
+
+        .form a:hover {
+            text-decoration: underline;
+        }
+
+        .line {
+            border: 1px solid #DBDCE1;
+        }
+
+        .create {
+            padding: 16px 24px;
+            background-color: #3EB327;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            margin: 16px auto;
+
+        }
+
+        .foot {
+            margin-top: 28px;
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .left {
+            width: 600px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="main">
+        <div class="left">
+            <img width="300px"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Facebook_Logo_%282019%29.svg/1280px-Facebook_Logo_%282019%29.svg.png"
+                alt="">
+            <p class="subheading">Connect with friends and the world around you on
+                Facebook.</p>
+        </div>
+        <div class="right">
+            <div class="form">
+                <input type="text" placeholder="Email or phone number">
+                <input type="password" placeholder="Password">
+                <button class="login">Log In</button>
+                <a href="#">Forgot Password?</a>
+                <div class="line"></div>
+                <button class="create">Create new account</button>
+            </div>
+            <div class="foot">
+                <strong>Create a Page</strong> for a celebrity, brand or business.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
