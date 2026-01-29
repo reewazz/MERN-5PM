@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom basics</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+        }
+
+        .rounded {
+            border-radius: 50%;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="h1id">Hello world!!!</h1>
+    <h1>Hello worlcdcdcdcdd!!!</h1>
+    <div class="container">
+
+        <div class="box"> box1</div>
+        <div class="box rounded " id="box2">box2</div>
+        <div class="box"> box3</div>
+    </div>
+
+    <input type="text" id="boxone">
+
+    <script>
+        const alertFunction = () => {
+            alert("hello from click")
+            h1.innerText = 'clicked'
+            for (let i = 0; i < boxes.length; i++) {
+                // boxes[i].innerText = "new text from js"
+                boxes[i].style.backgroundColor = "green"
+
+            }
+        }
+        const boxone = document.getElementById('boxone')
+        boxone.addEventListener("keypress", alertFunction)
+
+
+        const h1 = document.getElementById('h1id')
+        const h1array = document.getElementsByTagName('h1')
+
+
+
+        for (let i = 0; i < h1array.length; i++) {
+            h1array[i].innerText = "new text from js"
+
+        }
+
+        const boxes = document.getElementsByClassName('box')
+        for (let i = 0; i < boxes.length; i++) {
+            // boxes[i].innerText = "new text from js"
+            boxes[i].style.backgroundColor = "red"
+
+        }
+
+        const box1 = document.querySelector('.box .rounded')
+
+        const box = document.getElementById('box2')
+        box2.classList.remove("rounded")
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

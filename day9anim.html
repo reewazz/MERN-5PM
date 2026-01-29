@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(17, 120, 84);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            height: 400px;
+            width: 400px;
+            border: 3px solid white;
+            /* animation-name: rotate; */
+            animation-duration: 4s;
+            animation-iteration-count: 4;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+            /* border-radius: 50%; */
+        }
+
+        .box {
+            height: 100px;
+            width: 100px;
+            background-color: wheat;
+            /* transition: all 3s ease-in-out; */
+            animation-name: slide;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-delay: 1s;
+            animation-timing-function: linear;
+            animation-direction: alternate;
+
+            /* border-radius: 50%; */
+
+
+        }
+
+        .box:hover {
+            /* transform: translate(300px); */
+        }
+
+        @keyframes slide {
+
+            /* from {}
+
+            to {
+                background-color: yellow;
+            } */
+
+
+
+            0%,
+            100% {
+                transform: translate(0, 0);
+
+            }
+
+            25% {
+                transform: translate(300px, 0);
+                background-color: yellow;
+
+
+            }
+
+            50% {
+                transform: translate(300px, 300px);
+                background-color: red;
+
+            }
+
+            75% {
+                transform: translate(0, 300px);
+            }
+
+
+        }
+
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+
+        </div>
+    </div>
+
+</body>
+
+</html>
